@@ -32,7 +32,7 @@ class MainController extends Controller
     }
 
     /**
-     * @Route("/", name="main_index")
+     * @Route("/maincontroller", name="main_index")
      */
     public function index(Request $request)
     {
