@@ -1,0 +1,23 @@
+easy_admin:
+  entities:
+          Promotion:
+                class: App\Entity\Promotion
+                form:
+                  fields: 
+                      - "name"
+                      - "startdate"
+                      - "enddate"
+                      - { property: 'students', type: 'entity', type_options: { choice_label: 'firstname'}}
+
+          Student:     
+                class:  App\Entity\Student
+                form:
+                  fields: 
+                      - "firstname"
+                      - "lastname"
+                      - "birthdate"
+                      - { property: 'promotion', type: 'entity', type_options: { choice_label: 'name'}}
+
+
+
+                      
