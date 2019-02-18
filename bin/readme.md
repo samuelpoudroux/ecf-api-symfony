@@ -22,3 +22,11 @@ just configurate your database in the .env : DATABASE_URL=mysql://root:123@127.0
 
 **samuel poudroux**
 **samuelpoudroux@hotmail.fr**
+
+#command test
+ bin/phpunit
+
+ **this project dont contain any fixtures so its not possible to use the script to empty the database in each test**
+
+#phpcs
+**cf bash script within the files 
